@@ -1,14 +1,20 @@
-{
-  "name": "outpost",
-  "description": "adventurers outpost",
-  "version": "0.0.0",
-  "main": "./server.js",
-  "dependencies": {
-    "derby": "0.3.x",
-    "express": "3.0.x",
-    "passport": "0.1.16",
-    "passport-local": "0.1.6",
-    "gzippo": "0.2.0"
-  },
-  "private": true
+{ "name": "outpost"
+,  "description": "adventurers outpost"
+,  "version": "0.0.0-PREALPHA"
+,  "main": "./server.js"
+,  "homepage":"https://github.com/greelgorke/outpost"
+,  "license":"MIT"
+,  "author":"greelgorke <greelgorke@gmail.com> (greelgorke.tumblr.com)"
+, "repository": { "type": "git"
+                , "url" : "https://github.com/greelgorke/outpost.git"
+                }
+
+, "dependencies": { "derby": "0.3.x"
+                  , "express": "3.0.x"
+                  , "passport": "0.1.16"
+                  , "passport-local": "0.1.6"
+                  , "gzippo": "0.2.0"
+                  }
+, "private": true
+, "engines": { "node" : ">0.8.0"}
 }
