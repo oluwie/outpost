@@ -1,0 +1,21 @@
+<Header:>
+   <!-- This is a component defined in the /ui directory -->
+  <ui:connectionAlert>
+
+  <header class="navbar">
+    <div class="navbar-inner">
+    <a href="/" class="brand">Adventureres Inn</a>
+    {#if _session}
+    <ul class="nav">
+      <li><a href="#">Charas</a></li>
+      <li><a href="#">Groups</a></li>
+    </ul>
+    {/}
+    <ul class="nav pull-right">
+      {#if _session}
+      <li><a href="#">Player</a></li>
+      <li><a href="#">Logout</a></li>
+      {/}
+    </ul>
+    </div>
+  </header>

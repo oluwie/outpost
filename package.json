@@ -1,0 +1,14 @@
+{
+  "name": "outpost",
+  "description": "adventurers outpost",
+  "version": "0.0.0",
+  "main": "./server.js",
+  "dependencies": {
+    "derby": "0.3.x",
+    "express": "3.0.x",
+    "passport": "0.1.16",
+    "passport-local": "0.1.6",
+    "gzippo": "0.2.0"
+  },
+  "private": true
+}
