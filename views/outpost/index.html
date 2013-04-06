@@ -14,11 +14,22 @@
   Pre-defined templates are automatically included when the page is rendered.
 -->
 <import: src="shared" ns="">
-<import: src="auth">
+<import: src="login">
+<import: src="register">
 
 <Scripts:>
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
   <script type="text/javascript" src="/js/jquery.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  <script type="text/javascript">
+    jQuery(
+      function(){
+        $('.alert').alert()
+      }
+    )
+  </script>
 
 <Title:>
   Adventurers Inn
+
+<Body:>
+  <div>{{outpost}}</div>

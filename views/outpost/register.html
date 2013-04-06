@@ -1,0 +1,18 @@
+<Body:>
+  <div class="container">
+    <form action="/register" method="post" class="form-horizontal">
+      <legend>REGISTER</legend>
+      <fieldset>
+        <label>NAME</label>
+        <input type="text" name="name" placeholder="NAME" value="{{name}}" required/>
+        <label>EMAIL</label>
+        <input type="email" name="email" placeholder="EMAIL" value="{{email}}" required/>
+        <label>PASSWORD</label>
+        <input type="password" name="password" placeholder="********" required/>
+        <label>PASSWORD_CONFIRM</label>
+        <input type="password" name="passwordconfirm" placeholder="********" required/>
+      </fieldset>
+      <button type="submit" class="btn btn-primary">REGISTER</button>
+      <a href="/login" class="btn btn-info">TO_LOGIN</a>
+    </form>
+  </div>

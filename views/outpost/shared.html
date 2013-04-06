@@ -5,17 +5,23 @@
   <header class="navbar">
     <div class="navbar-inner">
     <a href="/" class="brand">Adventureres Inn</a>
-    {#if _session}
+    {#if _user}
     <ul class="nav">
       <li><a href="#">Charas</a></li>
       <li><a href="#">Groups</a></li>
     </ul>
     {/}
     <ul class="nav pull-right">
-      {#if _session}
-      <li><a href="#">Player</a></li>
-      <li><a href="#">Logout</a></li>
+      {#if _user}
+      <li><a href="/{_user.id}">{{_user.data.name}}</a></li>
+      <li><a href="/logout">Logout</a></li>
       {/}
     </ul>
     </div>
   </header>
+  {#if message}
+    <div class="alert alert-error">
+      <a href="#" class="close" data-dismiss="alert">&times;</a>
+      {{message}}
+    </div>
+  {/}
